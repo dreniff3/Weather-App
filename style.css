@@ -66,3 +66,36 @@ main {
     gap: 5px;
     font-size: 20px;
 }
+
+footer {
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+}
+
+#info-btn {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    margin: 0 10px;
+    text-align: center;
+    transition: all .8s ease-in;
+}
+
+#info-btn:hover {
+    transform: scale(1.05);
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(-25%);
+    font-size: 14px;
+}
