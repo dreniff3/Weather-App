@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+}
+
+header {
+    width: 90%;
+    max-width: 470px;
+    margin: 70px auto 0;
+    padding: 0 35px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    color: #555;
+    padding: 5px 25px;
+    height: 60px;
+    font-size: 24px;
+    position: relative;
+}
+
+#error {
+    font-size: 24px;
+    position: absolute;
+    top: 130px;
+}
+
+main {
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    margin: 40px auto 0;
+    border-radius: 20px;
+    padding: 20px 35px;
+}
+
+.condition {
+    font-size: 24px;
+}
+
+.current-temp {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
