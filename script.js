@@ -3,6 +3,11 @@ const submitBtn = document.querySelector('input[type="submit"]');
 form.addEventListener('submit', handleSubmit);
 submitBtn.addEventListener('click', handleSubmit);
 const error = document.querySelector('#error');
+const date = document.querySelector('#date');
+const infoBtn = document.querySelector('#info-btn');
+infoBtn.addEventListener('click', showInfo);
+
+date.textContent = new Date().getFullYear();
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -80,4 +85,8 @@ function displayData(newData) {
     document.querySelector('.feels-like').textContent = `FEELS LIKE: ${newData.feelsLike}°`;
     document.querySelector('.wind').textContent = `WIND: ${newData.wind}`;
     document.querySelector('.humidity').textContent = `HUMIDITY: ${newData.humidity}`;
+};
+
+function showInfo() {
+    document.getElementById('modal').style.display = "block";
 };
